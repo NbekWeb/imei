@@ -20,14 +20,11 @@ defineExpose({
    <div>
       <el-dialog v-model="dialogVisible" title="Заказать звонок" width="500" :before-close="handleClose">
          <!-- <span>Заказать звонок</span> -->
-         <p class="pr-12">Использование решений в различных ситуациях может отличаться. Наши менеджеры готовы дать свои
-            консультации и
-            ответить на все ваши вопросы. Просто оставьте свой номер телефона и мы вам перезвоним</p>
+         <p class="pr-12">{{ $t('useSolution') }}</p>
          <el-input type="text" name="mask" v-model="_phone" v-mask="'+000 00 000 00 00'" size="large" class="my-4"
             placeholder="Ваш номер телефона" />
          <button @click="dialogVisibleClose = true ; dialogVisible = false" :disabled="_phone.length < 17"
-            class="font-Manrope-700 py-2 px-8 bg-gray text-white" :class="{ '!bg-danger': _phone.length > 16 }">Заказать
-            звонок</button>
+            class="font-Manrope-700 py-2 px-8 bg-gray text-white" :class="{ '!bg-danger': _phone.length > 16 }">{{ $t('RequestCall') }}</button>
       </el-dialog>
       <el-dialog v-model="dialogVisibleClose" title="Спасибо за заказ!" width="500">
          <p class="pr-12">Вы заказали звонок, ожидайте в ближайшее

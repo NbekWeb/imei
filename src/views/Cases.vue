@@ -11,55 +11,68 @@ const modules = ref([Navigation, Autoplay])
 
 <template>
    <div class="bg-primary py-16 mt-16">
-      <div class="container px-10">
-         <h1 class="text-white">Кейсы</h1>
+      <div class="container px-10 max-md:px-5">
+         <h1 class="text-white">{{ $t('Cases') }}</h1>
          <p class="text-white mt-4 mb-8">Предусмотреть различные варианты использования, чтобы потенциальные <br />
             пользователи смогли «примерить» на свой бизнес</p>
       </div>
       <swiper class="container !max-w-[1330px] !px-20" :modules="modules" :autoplay="{
          delay: 35000,
          disableOnInteraction: false,
-      }" :navigation="true" :slides-per-view="3" :space-between="20">
+      }" :navigation="true" :space-between="20" :breakpoints="{
+   '580': {
+      slidesPerView: 1,
+      spaceBetween: 8,
+   },
+   '780': {
+      slidesPerView: 2,
+      spaceBetween: 8,
+   },
+   '992': {
+      slidesPerView: 3,
+      spaceBetween: 16,
+   },
+}">
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k1.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2">Интеграция с мобильным приложением банка</p>
+               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('mobileApplication') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k2.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2">Киоски самообслуживания и картоматы</p>
+               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('vendingMachines') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k3.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2">Выявление VIP-клиентов среди посетителей</p>
+               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('IdentificationVIP') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k4.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2">Использование технологии FacePay</p>
+               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('FacePay') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k5.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2">Система контроля и учёта доступа</p>
+               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('accountingSystem') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k6.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2">Оценка возраста и пола посетителей</p>
+               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('genderVisitors') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide class="!h-full">
             <div class="p-6 !h-full rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k7.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2">Оценка эмоций <br> посетителей</p>
+               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('visitorsEmotions') }}</p>
             </div>
          </swiper-slide>
       </swiper>
@@ -83,6 +96,7 @@ const modules = ref([Navigation, Autoplay])
    height: 100%;
    width: 70px;
    background: #5864AB;
+   border-radius: 0px 20px 0px 0px;
 
    &::after {
       color: white;
@@ -96,6 +110,8 @@ const modules = ref([Navigation, Autoplay])
    height: 100%;
    width: 70px;
    background: #5864AB;
+   border-radius: 0px 0px 0px 20px;
+
    &::after {
       color: white;
    }
