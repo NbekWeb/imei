@@ -36,8 +36,6 @@ watch(() => Router, () => _openMenu.value = false, { deep: true })
 
 <template>
    <TheModal ref="_headerRef" />
-   <p v-html="$t('RequestCall')"></p>
-   <p v-html="$t('Security')"></p>
    <div class="container px-10 max-md:px-5 !my-[60px] max-lg:!my-[32px] flex justify-between max-lg:relative">
       <div class="flex gap-4">
          <img src="@/assets/img/logo.svg" alt="">
@@ -75,7 +73,7 @@ i {
 .el-select--large .el-select__wrapper {
    border-radius: 20px;
    color: rgb(58, 73, 156) !important;
-   width: 80px !important;
+   width: 100px !important;
 }
 
 .el-select__placeholder,
