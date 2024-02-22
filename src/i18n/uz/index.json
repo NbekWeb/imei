@@ -36,7 +36,7 @@
    "IdentificationVIP": "Выявление VIP-клиентов среди посетителей",
    "FacePay": "Использование технологии FacePay",
    "accountingSystem": "Система контроля и учёта доступа",
-   "genderVisitors": "Надёжность",
+   "genderVisitors": "Оценка возраста и пола посетителей",
    "visitorsEmotions": "Оценка эмоций посетителей",
    "database": "пользователей в базе",
    "operations": "операций в сутки",

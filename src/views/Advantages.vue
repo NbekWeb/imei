@@ -4,9 +4,9 @@
 
 <template>
    <div class="container px-10 max-md:px-5">
-      <div>
-         <h1 class="max-md:text-[40px]">{{ $t('advantages') }}</h1>
-         <p class="mt-4 mb-8 md:text-2xl">Обоснование, почему наше решение хорошее</p>
+      <div id="advantages">
+         <h1 class="max-md:text-[40px] mt-4 mb-8">{{ $t('advantages') }}</h1>
+         <!-- <p class="mt-4 mb-8 md:text-2xl">Обоснование, почему наше решение хорошее</p> -->
          <div class="grid grid-cols-4 max-md:grid-cols-2  max-sm:grid-cols-1  gap-4 max-lg:gap-2">
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200">
                <img src="@/assets/img/a1.svg" alt="">
@@ -15,7 +15,7 @@
             </div>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200">
                <img src="@/assets/img/a2.svg" alt="">
-               <p class="font-Manrope-700 text-xl my-2 pr-6">{{ $t('ProcessingSpeed') }}</p>
+               <p class="font-Manrope-700 text-xl my-2 pr-7">{{ $t('ProcessingSpeed') }}</p>
                <p class="text-gray-600">{{ $t('ProcessingSpeedTitle') }}</p>
             </div>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200">
@@ -45,9 +45,9 @@
             </div>
          </div>
       </div>
-      <div class="mt-16">
-         <h1 class="max-md:text-[40px]">{{ $t('advantages') }}</h1>
-         <p class="mt-4 mb-8 md:text-2xl">Обоснование, почему наше решение может быть использовано</p>
+      <div id="identifikator" class="mt-16">
+         <h1 class="max-md:text-[40px] mt-6 mb-10">{{ $t('ReliabilitySafety') }}</h1>
+         <!-- <p class="mt-4 mb-8 md:text-2xl">Обоснование, почему наше решение может быть использовано</p> -->
          <div class="grid grid-cols-3 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1 max-lg:gap-2">
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200">
                <img src="@/assets/img/check.svg" alt="">

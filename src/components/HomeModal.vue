@@ -18,7 +18,7 @@ defineExpose({
 
 <template>
    <div>
-      <el-dialog v-model="dialogVisible" title="Заказать звонок" width="500" :before-close="handleClose">
+      <el-dialog v-model="dialogVisible" title="Заказать звонок" class="!max-w-[500px] sm:!w-full !w-[90%]" :before-close="handleClose">
          <!-- <span>Заказать звонок</span> -->
          <p class="pr-12">{{ $t('useSolution') }}</p>
          <el-input type="text" name="mask" v-model="_phone" v-mask="'+000 00 000 00 00'" size="large" class="my-4"
@@ -26,7 +26,7 @@ defineExpose({
          <button @click="dialogVisibleClose = true ; dialogVisible = false" :disabled="_phone.length < 17"
             class="font-Manrope-700 py-2 px-8 bg-gray text-white" :class="{ '!bg-danger': _phone.length > 16 }">{{ $t('RequestCall') }}</button>
       </el-dialog>
-      <el-dialog v-model="dialogVisibleClose" title="Спасибо за заказ!" width="500">
+      <el-dialog v-model="dialogVisibleClose" class="!max-w-[500px] sm:!w-full !w-[90%]" title="Спасибо за заказ!" width="500">
          <p class="pr-12">Вы заказали звонок, ожидайте в ближайшее
             время наши сотрудники свяжутся с вами.</p>
          <button @click="dialogVisibleClose = false" class="font-Manrope-700 mt-4 py-2 px-8 bg-danger text-white">

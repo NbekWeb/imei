@@ -3,7 +3,7 @@
 </script>
 
 <template>
-   <div class="container px-10 max-md:px-5 !mt-16">
+   <div id="static" class="container px-10 max-md:px-5 !mt-16">
       <h1 class="max-md:text-[40px]">{{ $t('Indicators') }}</h1>
       <p class="mt-8 mb-8 lg:text-2xl max-w-[800px] w-full">Интересные цифры, при помощи которых можно наглядно показать
          надёжность решения и правильность выбора</p>

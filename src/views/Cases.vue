@@ -10,11 +10,11 @@ const modules = ref([Navigation, Autoplay])
 </script>
 
 <template>
-   <div class="bg-primary py-16 mt-16">
+   <div id="cases" class="bg-primary py-16 mt-16">
       <div class="container px-10 max-md:px-5">
-         <h1 class="text-white">{{ $t('Cases') }}</h1>
-         <p class="text-white mt-4 mb-8">Предусмотреть различные варианты использования, чтобы потенциальные <br />
-            пользователи смогли «примерить» на свой бизнес</p>
+         <h1 class="text-white mb-10">{{ $t('Cases') }}</h1>
+         <!-- <p class="text-white mt-4 mb-8">Предусмотреть различные варианты использования, чтобы потенциальные <br />
+            пользователи смогли «примерить» на свой бизнес</p> -->
       </div>
       <swiper class="container !max-w-[1330px] !px-20" :modules="modules" :autoplay="{
          delay: 35000,
