@@ -5,8 +5,8 @@ export default {
       screens: {
          sm: "780px",
          md: "992px",
-         lg: "1100px",
-         xl: "1250px",
+         lg: "1230px",
+         xl: "1350px",
       },
       colors: {
          primary: "#3A499C",

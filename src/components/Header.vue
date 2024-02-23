@@ -51,16 +51,16 @@ watch(() => Router, () => _openMenu.value = false, { deep: true })
             :class="_openMenu && '!top-0'">
             <img @click="_openMenu = false" class="hidden max-lg:block cursor-pointer absolute right-5 top-5"
                src="@/assets/img/menuClose.svg" alt="">
-            <h2 class="font-inter-700 cursor-pointer sm:hidden">+998 33 500-60-77</h2>
+            <h2 class="font-inter-500 cursor-pointer sm:hidden">+998 33 500-60-77</h2>
             <a @click="$router.push('/#advantages')" href="#advantages" class="text-primary font-inter-500"> {{ $t('advantages') }}</a>
             <a @click="$router.push('/#identifikator')" href="#identifikator" class="text-primary font-inter-500"> {{ $t('reliability') }}</a>
             <router-link to="/identifikator" class="text-primary font-inter-500"> {{ $t('Products') }}</router-link>
             <a @click="$router.push('/#cases')" href="#cases" class="text-primary font-inter-500"> {{ $t('Cases') }}</a>
             <a @click="$router.push('/#static')" href="#static" class="text-primary font-inter-500"> {{ $t('Indicators') }}</a>
          </div>
-         <h2 class="font-inter-700 cursor-pointer max-sm:hidden">+998 33 500-60-77</h2>
+         <h2 class="font-inter-600 cursor-pointer max-sm:hidden">+998 33 500-60-77</h2>
          <button @click="openModal"
-            class="bg-danger font-inter-600 text-white md:text-xl max-md:px-4 max-md:py-2">{{ $t('RequestCall') }}</button>
+            class="bg-danger font-inter-500 text-white md:text-xl max-md:px-4 max-md:py-2">{{ $t('RequestCall') }}</button>
       </div>
 
    </div>
