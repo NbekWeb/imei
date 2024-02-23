@@ -36,43 +36,43 @@ const modules = ref([Navigation, Autoplay])
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k1.svg" alt="">
-               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('mobileApplication') }}</p>
+               <p class="h-[49px] font-inter-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('mobileApplication') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k2.svg" alt="">
-               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('vendingMachines') }}</p>
+               <p class="h-[49px] font-inter-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('vendingMachines') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k3.svg" alt="">
-               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('IdentificationVIP') }}</p>
+               <p class="h-[49px] font-inter-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('IdentificationVIP') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k4.svg" alt="">
-               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('FacePay') }}</p>
+               <p class="h-[49px] font-inter-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('FacePay') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k5.svg" alt="">
-               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('accountingSystem') }}</p>
+               <p class="h-[49px] font-inter-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('accountingSystem') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide>
             <div class="p-6 rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k6.svg" alt="">
-               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('genderVisitors') }}</p>
+               <p class="h-[49px] font-inter-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('genderVisitors') }}</p>
             </div>
          </swiper-slide>
          <swiper-slide class="!h-full">
             <div class="p-6 !h-full rounded-tr-2xl rounded-bl-2xl border-2 border-primary-200 bg-white">
                <img src="@/assets/img/k7.svg" alt="">
-               <p class="h-[49px] font-Manrope-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('visitorsEmotions') }}</p>
+               <p class="h-[49px] font-inter-700 max-md:h-[73px] max-md:line-clamp-3 my-2">{{ $t('visitorsEmotions') }}</p>
             </div>
          </swiper-slide>
       </swiper>

@@ -15,7 +15,7 @@ const _headerRef = ref()
          <div class="col-span-3">
             <h1 class="text-white lg:pr-[30px] max-lg:text-[40px] max-sm:text-[32px] leading-[56px] max-md:leading-[40px]">
                {{ $t('OrderNow') }}</h1>
-            <button @click="_headerRef.open()" class="py-4 px-8 mt-8 text-danger text-xl font-Manrope-700 bg-white">{{
+            <button @click="_headerRef.open()" class="py-4 px-8 mt-8 text-danger text-xl font-inter-700 bg-white">{{
                $t('ConnectNow') }}</button>
          </div>
          <div class="col-span-1">

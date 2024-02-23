@@ -4,29 +4,30 @@
 
 @layer base {
    @font-face {
-      font-family: 'Manrope-400';
-      src: url('../font/Manrope-Regular.ttf') format('truetype');
+      font-family: 'inter-400';
+      src: url('../font/Inter-Regular.ttf') format('truetype');
    }
 
    @font-face {
-      font-family: 'Manrope-500';
-      src: url('../font/Manrope-Medium.ttf') format('truetype');
+      font-family: 'inter-500';
+      src: url('../font/Inter-Medium.ttf') format('truetype');
    }
 
    @font-face {
-      font-family: 'Manrope-600';
-      src: url('../font/Manrope-SemiBold.ttf') format('truetype');
+      font-family: 'inter-600';
+      src: url('../font/Inter-SemiBold.ttf') format('truetype');
    }
 
    @font-face {
-      font-family: 'Manrope-700';
-      src: url('../font/Manrope-Bold.ttf') format('truetype');
+      font-family: 'inter-700';
+      src: url('../font/Inter-Bold.ttf') format('truetype');
    }
 
    @font-face {
-      font-family: 'Manrope-800';
-      src: url('../font/Manrope-ExtraBold.ttf') format('truetype');
+      font-family: 'inter-800';
+      src: url('../font/Inter-ExtraBold.ttf') format('truetype');
    }
+   
 }
 
 .container {
@@ -35,18 +36,19 @@
 
 body {
    box-sizing: border-box;
+   /* font-family: 'ma'; */
 }
 html {
    scroll-behavior: smooth;
 }
 
 * {
-   font-family: 'Manrope-400';
+   font-family:  'inter-400';
    font-size: 16px;
 }
 
 h1 {
-   font-family: 'Manrope-800';
+   font-family: 'inter-700';
    font-size: 56px;
    line-height: 1;
 }
