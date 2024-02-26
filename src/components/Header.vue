@@ -45,22 +45,28 @@ watch(() => Router, () => _openMenu.value = false, { deep: true })
          </el-select>
       </div>
       <div class="flex gap-6 max-md:gap-4 items-center ">
-         <img  @click="_openMenu = true" class="hidden max-lg:block cursor-pointer" src="@/assets/img/menuOpen.svg" alt="">
+         <img @click="_openMenu = true" class="hidden max-lg:block cursor-pointer" src="@/assets/img/menuOpen.svg" alt="">
          <div
             class="flex gap-3 max-lg:absolute max-lg:flex-col max-lg:p-9 max-lg:w-[244px] open_menu max-lg:top-[-350px] max-lg:!z-99 max-lg:transition-all max-lg:bg-white"
             :class="_openMenu && '!top-0'">
             <img @click="_openMenu = false" class="hidden max-lg:block cursor-pointer absolute right-5 top-5"
                src="@/assets/img/menuClose.svg" alt="">
             <h2 class="font-inter-500 cursor-pointer sm:hidden">+998 33 500-60-77</h2>
-            <a @click="$router.push('/#advantages')" href="#advantages" class="text-primary font-inter-500"> {{ $t('advantages') }}</a>
-            <a @click="$router.push('/#identifikator')" href="#identifikator" class="text-primary font-inter-500"> {{ $t('reliability') }}</a>
+            <a @click="$router.push('/#advantages')" href="#advantages" class="text-primary font-inter-500"> {{
+               $t('advantages') }}</a>
+            <a @click="$router.push('/#identifikator')" href="#identifikator" class="text-primary font-inter-500"> {{
+               $t('reliability') }}</a>
             <router-link to="/identifikator" class="text-primary font-inter-500"> {{ $t('Products') }}</router-link>
             <a @click="$router.push('/#cases')" href="#cases" class="text-primary font-inter-500"> {{ $t('Cases') }}</a>
-            <a @click="$router.push('/#static')" href="#static" class="text-primary font-inter-500"> {{ $t('Indicators') }}</a>
+            <a @click="$router.push('/#static')" href="#static" class="text-primary font-inter-500"> {{ $t('Indicators')
+            }}</a>
          </div>
          <h2 class="font-inter-600 cursor-pointer max-sm:hidden">+998 33 500-60-77</h2>
          <button @click="openModal"
-            class="bg-danger font-inter-500 text-white md:text-xl max-md:px-4 max-md:py-2">{{ $t('RequestCall') }}</button>
+            class="bg-danger font-inter-500 text-white md:text-xl max-md:px-4 max-md:py-2 max-[500px]:hidden inline">{{ $t('RequestCall') }}</button>
+         <button @click="openModal" class="max-[500px]:inline hidden border border-danger/70 rounded-full w-10 h-10 p-1.5 bg-danger">
+            <img class="w-6 h-6" src="@/assets/img/phone.svg" alt="">
+         </button>
       </div>
 
    </div>

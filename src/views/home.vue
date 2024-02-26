@@ -18,11 +18,11 @@ const _headerRef = ref()
 
       <div
          class="lg:container lg:mx-auto flex gap-1 items-center overflow-hidden bg-primary lg:rounded-tr-3xl lg:rounded-bl-3xl !mb-[72px] max-sm:flex-col-reverse">
-         <img src="@/assets/img/user.png" alt="">
+         <img class="max-sm:w-auto max-md:w-1/2" src="@/assets/img/user.png" alt="">
          <img class="hidden" src="@/assets/img/userlg.png" alt="">
-         <div class="max-sm:mt-[72px] max-sm:mb-[32px] px-5">
-            <h1 class="text-white font-inter-700 max-lg:text-[40px]">{{ $t('Security') }}</h1>
-            <p class="mt-4 mb-8 text-white text-xl md:mr-[170px]">
+         <div class="max-sm:mt-[72px] max-sm:mb-[32px] px-5 max-md:px-0 max-md:-ml-12 max-sm:mx-5">
+            <h1 class="text-white font-inter-700 max-md:font-inter-600 max-lg:text-[44px]">{{ $t('Security') }}</h1>
+            <p class="mt-4 mb-8 text-white text-xl md:mr-[10px]">
                {{ $t('biometricIdentification') }}
             </p>
             <button @click="_headerRef.open()" class="px-8 py-4 text-white bg-danger">{{ $t('ConnectNow')

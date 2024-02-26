@@ -12,7 +12,7 @@ const modules = ref([Navigation, Autoplay])
 <template>
    <div id="cases" class="bg-primary py-16 mt-16">
       <div class="container px-10 max-md:px-5">
-         <h1 class="text-white mb-10">{{ $t('Cases') }}</h1>
+         <h1 class="text-white mb-10 max-md:text-[44px]">{{ $t('Cases') }}</h1>
          <!-- <p class="text-white mt-4 mb-8">Предусмотреть различные варианты использования, чтобы потенциальные <br />
             пользователи смогли «примерить» на свой бизнес</p> -->
       </div>
@@ -24,7 +24,7 @@ const modules = ref([Navigation, Autoplay])
       slidesPerView: 1,
       spaceBetween: 8,
    },
-   '780': {
+   '760': {
       slidesPerView: 2,
       spaceBetween: 8,
    },

@@ -13,7 +13,7 @@ const _headerRef = ref()
       <div
          class="lg:rounded-tr-3xl lg:rounded-bl-3xl lg:container lg:mx-auto bg-danger grid grid-cols-4 !my-[72px] !p-[72px] max-md:!p-8  max-md:flex max-md:flex-col-reverse max-md:items-start">
          <div class="col-span-3">
-            <h1 class="text-white lg:pr-[30px] max-lg:text-[40px] max-sm:text-[32px] leading-[56px] max-md:leading-[40px]">
+            <h1 class="text-white lg:pr-[30px] max-lg:text-[40px] max-sm:text-[32px] leading-[56px] max-md:leading-[46px]">
                {{ $t('OrderNow') }}</h1>
             <button @click="_headerRef.open()" class="py-4 px-8 mt-8 text-danger text-xl font-inter-700 bg-white">{{
                $t('ConnectNow') }}</button>

@@ -4,7 +4,7 @@
 <template>
    <div class="bg-primary py-16 mt-16">
       <div class="container px-10 max-md:px-5">
-         <h1 class="text-white max-md:text-[40px]">{{ $t('LivenessScore') }}</h1>
+         <h1 class="text-white max-md:text-[44px]">{{ $t('LivenessScore') }}</h1>
          <p class="mt-2 mb-4 text-white">
             {{ $t('LivenessScoreTitle') }}
          </p>

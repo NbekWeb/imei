@@ -28,7 +28,7 @@ defineExpose({
       </el-dialog>
       <el-dialog v-model="dialogVisibleClose" class="!max-w-[500px] sm:!w-full !w-[90%]" :title="$t('ThankOrder')" width="500">
          <p class="pr-12">{{ $t('orderedCall') }}</p>
-         <button @click="dialogVisibleClose = false" class="font-inter-700 mt-4 py-2 px-8 bg-danger text-white">
+         <button @click="dialogVisibleClose = false" class="font-inter-700 mt-4 py-3 px-8 bg-danger text-white">
             {{ $t('close') }}</button>
       </el-dialog>
    </div>
@@ -37,6 +37,9 @@ defineExpose({
 .el-dialog {
    border-radius: 0px 30px 0px 30px;
    padding: 36px !important;
+   @media(max-width: 500px){
+      padding: 25px!important;
+   }
 
    .el-dialog__title {
       font-family: 'inter-700';
