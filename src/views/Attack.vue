@@ -1,5 +1,5 @@
 <template>
-   <div class="bg-primary py-16 mt-16">
+   <div class="bg-primary py-16">
       <div class="container px-10 max-md:px-5">
          <h1 class="text-white max-md:text-[40px] mt-2 mb-10">{{ $t('ProtectionAgainst') }}</h1>
          <!-- <p class="mt-2 mb-8 text-white text-xl">

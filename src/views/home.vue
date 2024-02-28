@@ -4,7 +4,7 @@ import TheModal from '../components/HomeModal.vue'
 
 import Advantages from './Advantages.vue'
 import Cases from './Cases.vue'
-import Indicators from './Indicators.vue'
+// import Indicators from './Indicators.vue'
 import Attack from './Attack.vue'
 import Order from './Order.vue'
 
@@ -25,13 +25,13 @@ const _headerRef = ref()
             <p class="mt-4 mb-8 text-white text-xl md:mr-[10px]">
                {{ $t('biometricIdentification') }}
             </p>
-            <button @click="_headerRef.open()" class="px-8 py-4 text-white bg-danger">{{ $t('ConnectNow')
+            <button @click="_headerRef.open()" class="px-8 py-4 font-inter-500 text-white bg-danger">{{ $t('ConnectNow')
             }}</button>
          </div>
       </div>
       <Advantages />
       <Cases />
-      <Indicators />
+      <!-- <Indicators /> -->
       <Attack />
       <Order />
    </div>
