@@ -64,7 +64,7 @@
    "LivenessScore": " Jonlilikni (liveness) baholash",
    "LivenessScoreTitle": "Fotosuratning 'jonliligi'ni bitta kadr orqali baholaydi. Identifikatsiya tizimlariga odatiy hujumlarni aniqlaydi va tasniflaydi - monitordan qayta olingan fotosuratlar yoki videolar, chop etilgan fotosuratlar, 3D maskalar.",
    "InformationKiosk": "O'z-o'ziga xizmat ko'rsatish kiosklarining ishlashini avtomatlashtirish uchun foydalaniladi. Yechim yuzning uch o'lchovli 3D xaritasini tuzadi, bu foydalanuvchi identifikatsiyalash jarayonining xavfsizligini yaxshilaydi.",
-   "Stream": "Stream",
+   "Stream": "FaceStream",
    "StreamTitle": " Kuzatuv kameralaridagi video oqimlardagi yuzlarni qidiradi va aniqlaydi. Menejerlar va administratorlarning ishini osonlashtiradi.",
   
    "resived": "Maxfiylik va shaxsiy ma'lumotlar siyosati qayta ishlanadi",
@@ -124,7 +124,26 @@
    "personalInformation23": "Qo'shimcha shartlar",
    "personalInformation24": "12. Operator Foydalanuvchi ruxsatini so'rmaguncha, joriy Maxfiylik siyosatiga o'zgartirishlar kiritishi huquqiga ega. Yangi siyosat, yangi versiyasida boshqa bir nima ko'rsatilmagan holda, Saytda joylashganidan so'ng kuchga kiradi.",
    "personalInformation25": "13. Amaldagi Maxfiylik Siyosati saytda joylashgan face-id.uz.",
-
+    
+   "IdentificationPlatform1": "Shaxsiylashtirish va tasdiqlash platformasi quyidagi vazifalarni bajaradi:",
+   "IdentificationPlatform2": "Rasm ustida yuzni aniqlash",
+   "IdentificationPlatform3": "Yuzning sharhi (descriptor) ajratib olish;",
+   "IdentificationPlatform4": "Yuzlar guruhlash (VIP mijozlar, oq ro'yxatlar);",
+   "IdentificationPlatform5": "Yuzning xususiyatlari (jins, yosh va hislar) aniqlash;",
+   "IdentificationPlatform6": "Kandidatning rasmini bazadagi yozuv bilan solishtirish.",
+   "IdentificationPlatform7": "Platforma olingan tasvirlarni tahlil qiladi va unikal parametrlar to'plamini (yuz sharhlarini) ajratadi. Olingan sharhlar yuz tasdiqini (bir-biriga moslik 1:1) yoki yuzni aniqlashni (bir-biriga moslik 1:N) uchun ishlatilishi mumkin.",
+   "IdentificationPlatform8": "Platforma sekundlarda yuzlab tasvirni qayta ishlash va natijani 99% dan oshib o'tadi.",
+   "LivenessScore1": "Dasturda maxsus baholovchi yordamida odam yuzining haqiqiy yoki so'nggi paytdagi (rasm, elektron qurilmalarning ekranlaridagi tasvirlar) qal'g'alanib, qal'g'alanmaganligini aniqlash imkoniyati mavjud.",
+   "LivenessScore2": "Algoritm FIDO klassifikatsiyasi bo'yicha quyidagi turlardagi hujumlar qarshi himoya qilish imkonini beradi:",
+   "LivenessScore3": "A tur (chaplangan rasm, elektron qurilmalarning ekranlaridagi tasvirlar);",
+   "LivenessScore4": "B tur (qog'oz maska, harakatli yuz videolari).",
+   "LivenessScore5": "Liveness bahosidan oldin, platforma tasvirning sifatini (yorug'lik, kontrast, moslashuv) tekshiradi. Platforma tasvirni to'g'rilaydi (normallashtiradi) - surungi to'g'rilanadi, ko'zlar joylashuvi bo'yicha tasvir markazlashtiriladi va tasvir kesishadi (fonni tozalash).",
+   "LivenessScore6": "Baholovchi faqat bittasi yuz bo'lgan tasvirlarni qayta ishlashga ruxsat beriladi. Agar tasvirda ikkita yuz aniqlansa, baholovchi xatolik qaytaradi. Algoritm natijasini beringan baholovchi Liveness tekshirishning tasvirning rasmni taklif etadi - yuz tasviri pastlab turish ehtimoli.",
+   "InfoKiosk": "Ma'lumotlarni taqdim etish kioski",
+   "InfoKiosk1": "Xodimlarsiz ofislar uchun ideal yechim. Kiosk mehmonga shaxsiylashtirishni amalga oshirish va zarur operatsiyani xodimlar ishtirok etmagan holda amalga oshirish imkonini beradi. Maxfiylik darajasini oshirish uchun mahsus kamera ishlatiladi. Kamera ikki spektr (ko'rinadigan yorug'lik va infrachiziq)da tasvirlar shakllantiradi, bu hamkasbligini rad etadi.",
+   "Stream1": "Dastur kadrda yuzni qidirishni va yuzlar tanini - mavjud yuzlar bazasi bilan solishtirishni amalga oshiradi. Dastur avvaldan saqlangan ro'yxatlardan (VIP mijozlar, xodimlar) tasvirlarning paydo bo'lishi haqida ma'lumot olishadi va CRM tizimiga yoki ofis administratoriga xabar yuboradi. Yechim mijozlarni qo'llab-quvvatlash sifatini oshirish imkonini beradi.",
+   "Stream2": "Yuzlar videopulda o'zaro aloqani ta'minlaydi, ularga kadrlarda bo'lgan paytda. Dastur bir necha kameradan video tahlilini amalga oshirishi mumkin va trekking (kadrlar ketma-ketligida obyektni kuzatish)ni amalga oshirishi mumkin. Trekking tahlili tashkilotlar harakatlarining marketing ma'lumotlarini olishga imkon beradi: mijozlar faoliyatlarini tahlil qilish, harakatlar termal xaritalari, qizil joyni.",
+   
 
    "processedAutomatically": "В соответствии с функциональным назначением Приложения, обрабатываются в автоматическом режиме следующие данные Пользователя:",
    "questionA": "а) персональные данные, которые Пользователь предоставляет о себе самостоятельно при регистрации в Приложении:",

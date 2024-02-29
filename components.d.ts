@@ -14,7 +14,11 @@ declare module 'vue' {
     Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     HomeModal: typeof import('./src/components/HomeModal.vue')['default']
+    IdenficatorModal: typeof import('./src/components/IdenficatorModal.vue')['default']
+    InfoModal: typeof import('./src/components/InfoModal.vue')['default']
+    LivenessModal: typeof import('./src/components/LivenessModal.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    StreamModal: typeof import('./src/components/StreamModal.vue')['default']
   }
 }
