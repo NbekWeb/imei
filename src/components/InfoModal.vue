@@ -23,7 +23,7 @@ defineExpose({
             <p class="mb-2">{{ $t('InfoKiosk1') }}</p>
          </div>
 
-      </el-dialog>
+      </el-dialog>   
 
    </div>
 </template>

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { postCall_API } from '@/services/phone';
 const dialogVisible = ref(false)
 const dialogVisibleClose = ref(false)
 const _phone = ref('+998')
@@ -14,6 +15,14 @@ function open() {
 defineExpose({
    open
 })
+
+ async function handleCall() {
+    const [error, response] = await postCall_API(_phone.value.replaceAll(' ',''))
+    if (error) return
+    dialogVisibleClose.value = true;
+    dialogVisible.value = false
+    _phone.value = '+998'
+}
 </script>
 
 <template>
@@ -23,7 +32,7 @@ defineExpose({
          <p class="pr-12">{{ $t('useSolution') }}</p>
          <el-input type="text" name="mask" v-model="_phone" v-mask="'+000 00 000 00 00'" size="large" class="my-4"
             :autocomplete="$t('phoneNumber')" />
-         <button @click="dialogVisibleClose = true ; dialogVisible = false" :disabled="_phone.length < 17"
+         <button @click="handleCall" :disabled="_phone.length < 17"
             class="font-inter-700 py-2 px-8 bg-gray text-white" :class="{ '!bg-danger': _phone.length > 16 }">{{ $t('RequestCall') }}</button>
       </el-dialog>
       <el-dialog v-model="dialogVisibleClose" class="!max-w-[500px] sm:!w-full !w-[90%]" :title="$t('ThankOrder')" width="500">
