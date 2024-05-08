@@ -16,6 +16,7 @@ defineExpose({
    open
 })
 
+
  async function handleCall() {
     const [error, response] = await postCall_API(_phone.value.replaceAll(' ',''))
     if (error) return
