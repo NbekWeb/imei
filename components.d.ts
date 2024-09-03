@@ -20,5 +20,6 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     StreamModal: typeof import('./src/components/StreamModal.vue')['default']
+    UzCard: typeof import('./src/components/UzCard.vue')['default']
   }
 }

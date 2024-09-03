@@ -8,10 +8,11 @@ import { createPinia } from 'pinia'
 import i18n from './i18n'
 import App from './App.vue'
 import router from './router'
+import VueApexCharts from "vue3-apexcharts";
 
 const app = createApp(App)
 
 app.use(createPinia())
-app.use(router).use(ElementPlus).use(VueMask).use(i18n)
+app.use(router).use(ElementPlus).use(VueMask).use(i18n).use(VueApexCharts)
 
 app.mount('#app')
